@@ -17,7 +17,7 @@ hide_streamlit_style = """
 	            </style>
 	            """
 st.markdown(hide_streamlit_style, unsafe_allow_html=True)
-if check_password():
+if True:
 
 
 	# --- Importazione firebase, necessario if per evitare errore streamlit ---

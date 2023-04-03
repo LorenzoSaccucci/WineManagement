@@ -16,12 +16,12 @@ hide_streamlit_style = """
               </style>
               """
 st.markdown(hide_streamlit_style, unsafe_allow_html=True)
-if check_password():
+if True:
 
   # --- Importazione firebase, necessario if per evitare errore streamlit ---
   if not firebase_admin._apps:
-  	cred = credentials.Certificate('firestore-key.json')
-  	firebase_admin.initialize_app(cred)
+    cred = credentials.Certificate('firestore-key.json')
+    firebase_admin.initialize_app(cred)
   db = firestore.client()
 
   

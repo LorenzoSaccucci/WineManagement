@@ -7,7 +7,7 @@ from st_aggrid import GridOptionsBuilder, AgGrid, GridUpdateMode, DataReturnMode
 import time
 import matplotlib.pyplot as plt
 from matplotlib.pyplot import figure
-from functions import check_password
+#from functions import check_password
 # --- Layout comune a tutte le pagine
 st.set_page_config(page_title='Le Bon Ton', layout = 'wide', page_icon = '', initial_sidebar_state = 'auto')
 hide_streamlit_style = """
@@ -17,7 +17,8 @@ hide_streamlit_style = """
 	            </style>
 	            """
 st.markdown(hide_streamlit_style, unsafe_allow_html=True)
-if check_password():
+
+if True:
 
 	if not firebase_admin._apps:
 		cred = credentials.Certificate('firestore-key.json')

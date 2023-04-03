@@ -23,7 +23,7 @@ st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 
 
 
-if check_password():
+if True:
     def add_bg_from_url():
             st.markdown(
                 f"""

@@ -1,0 +1,26 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+streamlit = "==1.16.0"
+google-cloud-firestore = "*"
+streamlit-aggrid = "*"
+pandas = "==1.4.4"
+firebase-admin = "==6.0.1"
+pyzbar = "*"
+numpy = "*"
+pillow = "*"
+pipfile = "*"
+requests = "*"
+opencv-python-headless = "*"
+codicefiscale = "==0.9"
+python-codicefiscale = "==0.6.0"
+python-dateutil = "==2.8.2"
+matplotlib = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.8"

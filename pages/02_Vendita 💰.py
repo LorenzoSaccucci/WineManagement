@@ -5,10 +5,9 @@ from firebase_admin import firestore
 from datetime import datetime, date
 import time
 from zoneinfo import ZoneInfo
-from functions import check_password
 
 # --- Layout comune a tutte le pagine
-st.set_page_config(page_title='Le Bon Ton', layout = 'wide', page_icon = '', initial_sidebar_state = 'auto')
+st.set_page_config(page_title='Armando', layout = 'wide', page_icon = '', initial_sidebar_state = 'auto')
 hide_streamlit_style = """
 	            <style>
 	            #MainMenu {visibility: hidden;}
@@ -17,7 +16,7 @@ hide_streamlit_style = """
 	            """
 st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 
-if check_password():
+if True:
 
 
 	# --- Importazione firebase, necessario if per evitare errore streamlit ---

@@ -3,8 +3,6 @@ import firebase_admin
 from firebase_admin import credentials
 from firebase_admin import firestore
 from datetime import datetime, date
-from functions import check_password
-
 
 
 if not firebase_admin._apps:
@@ -12,7 +10,7 @@ if not firebase_admin._apps:
     firebase_admin.initialize_app(cred)
 db = firestore.client()
 
-st.set_page_config(page_title='Le Bon Ton', layout = 'wide', page_icon = "", initial_sidebar_state = 'auto')
+st.set_page_config(page_title='Armando', layout = 'wide', page_icon = "", initial_sidebar_state = 'auto')
 hide_streamlit_style = """
                 <style>
                 #MainMenu {visibility: hidden;}
@@ -23,7 +21,7 @@ st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 
 
 
-if check_password():
+if True:
     def add_bg_from_url():
             st.markdown(
                 f"""
@@ -41,7 +39,7 @@ if check_password():
     add_bg_from_url()
     
 
-    st.markdown('# <span style="color:  #FFFFFF;">Armando per Le Bon Ton</span>', unsafe_allow_html=True)
+    st.markdown('# <span style="color:  #FFFFFF;">Armando</span>', unsafe_allow_html=True)
 
 
 

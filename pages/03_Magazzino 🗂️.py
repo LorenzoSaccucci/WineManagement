@@ -7,10 +7,9 @@ from datetime import datetime, date, timedelta
 from st_aggrid import GridOptionsBuilder, AgGrid, GridUpdateMode, DataReturnMode
 import pandas as pd
 import time
-from functions import check_password
 
 # --- Layout comune a tutte le pagine
-st.set_page_config(page_title='Le Bon Ton', layout = 'wide', page_icon = '', initial_sidebar_state = 'auto')
+st.set_page_config(page_title='Armando', layout = 'wide', page_icon = '', initial_sidebar_state = 'auto')
 hide_streamlit_style = """
 	            <style>
 	            #MainMenu {visibility: hidden;}
@@ -19,7 +18,7 @@ hide_streamlit_style = """
 	            """
 st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 
-if check_password():
+if True:
 
 	# --- Importazione firebase, necessario if per evitare errore streamlit ---
 	if not firebase_admin._apps:
